@@ -8,12 +8,10 @@ class Main {
             return 1;
         double sqrt = Math.sqrt(distance);
         double pivot = Math.round(sqrt);
-        if(distance <= Math.pow(pivot, 2)){
+        if(distance <= Math.pow(pivot, 2))
             return pivot*2-1;
-        }
-        else{
+        else
             return pivot*2;
-        }
     }
     public static void main(String[] args) throws IOException {
         int T = Integer.parseInt(br.readLine());
