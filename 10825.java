@@ -13,21 +13,18 @@ class Student implements Comparable<Student>{
         this.eng = eng;
         this.math = math;
     }
-
     @Override
     public int compareTo(Student o) {
         if(this.korean==o.korean){
             if(this.eng==o.eng){
-                if(this.math==o.math){
+                if(this.math==o.math)
                     return this.name.compareTo(o.name);
-                }
                 return this.math<o.math?1:-1;
             }
             return this.eng>o.eng?1:-1;
         }
         return this.korean<o.korean?1:-1;
     }
-
     @Override
     public String toString() {
         return name;
