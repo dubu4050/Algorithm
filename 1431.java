@@ -36,8 +36,9 @@ class Main {
             serials[i]=br.readLine();
 
         Arrays.sort(serials, new CustomComparator());
-        for(String s:serials)
+        for(String s:serials){
             stringBuilder.append(s+'\n');
+        }
         System.out.println(stringBuilder.toString().trim());
     }
 }
