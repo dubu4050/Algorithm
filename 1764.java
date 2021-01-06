@@ -27,8 +27,8 @@ class Main{
                 list.add(key);
             }
         }
+        stringBuilder.append(cnt).append("\n");
         list.stream().sorted().forEach(a-> stringBuilder.append(a).append("\n"));
-        System.out.println(cnt);
         System.out.println(stringBuilder.toString().trim());
     }
 }
