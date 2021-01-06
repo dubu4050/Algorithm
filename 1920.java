@@ -17,10 +17,11 @@ class Main {
         input = br.readLine().split(" ");
 
         Arrays.stream(input).forEach(s -> {
-            if (hashMap.containsKey(Integer.parseInt(s)))
+            if (hashMap.containsKey(Integer.parseInt(s))){
                 stringBuilder.append(1).append("\n");
-            else
+            } else {
                 stringBuilder.append(0).append("\n");
+            }
         });
 
         System.out.println(stringBuilder.toString().trim());
