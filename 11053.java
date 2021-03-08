@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         input();
         solve();
-        if(L==1)
+        if(L===1)
             System.out.println(1);
         else
             System.out.println(max);
